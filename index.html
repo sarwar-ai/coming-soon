@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Future Prospects</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: url('./sideimage.jpeg') no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    /* Overlay for enhanced readability */
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      animation: fadeIn 2s ease-out;
+    }
+    
+    /* Main content container */
+    .content {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      animation: slideUp 1.5s ease-out;
+    }
+    
+    .content h1 {
+      font-size: 4.5rem;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin: 0; /* Further reduced gap */
+      text-transform: uppercase;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+      opacity: 0;
+      animation: fadeInText 2s forwards;
+    }
+    
+    /* Apply yellowish color to the second h1 ("Soon") */
+    .content h1:nth-of-type(2) {
+      color: #f1c40f; /* Yellowish color */
+      animation-delay: 0.5s;
+    }
+    
+    .side-image {
+      margin-bottom: 20px;
+      width: 200px;
+      height: auto;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .side-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
+    @keyframes fadeInText {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .content h1 {
+        font-size: 3rem;
+      }
+      .side-image {
+        width: 150px;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <img src="./WhatsApp Image 2025-03-28 at 10.44.52 PM.jpeg" alt="Side Image" class="side-image">
+    <h1>Coming</h1>
+    <h1>Soon</h1>
+  </div>
+</body>
+</html>
+
+
+
